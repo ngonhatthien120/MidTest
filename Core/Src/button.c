@@ -11,8 +11,6 @@ int buttonN_flag[MAX_BUTTONS] = { 0 };
 //signal button pressed
 int buttonN_PIN[MAX_BUTTONS] = { GPIO_PIN_12, GPIO_PIN_13, GPIO_PIN_14 };
 
-int COUNTER = 0;
-
 int KeyReg0[MAX_BUTTONS] = { NORMAL_STATE };
 int KeyReg1[MAX_BUTTONS] = { NORMAL_STATE };
 int KeyReg2[MAX_BUTTONS] = { NORMAL_STATE };
@@ -55,7 +53,6 @@ void getKeyInput() {
 						subKeyProcess(i);
 					}
 					TimerForKeyPress[i] = 100;
-					//KeyReg3[i] = NORMAL_STATE;
 				}
 			}
 		}

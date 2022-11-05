@@ -104,6 +104,7 @@ int main(void) {
 	setTimerLed(1000);
 	status = NORMAL;
 	while (1) {
+		show7SEG();
 		fsm_simple_buttons_run();
 		fsm_automatic_run();
 		//Led Blinky for Debugging
@@ -236,10 +237,7 @@ static void MX_GPIO_Init(void) {
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 	timerRun();
-	//BUTTON
 	getKeyInput();
-	//LED
-	show7SEG();
 }
 /* USER CODE END 4 */
 

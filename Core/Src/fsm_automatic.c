@@ -6,7 +6,6 @@
  */
 
 #include "fsm_automatic.h"
-#include "button.h"
 #include "software_timer.h"
 #include "fsm_buttons.h"
 #include "global.h"

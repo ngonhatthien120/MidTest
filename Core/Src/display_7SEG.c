@@ -7,11 +7,7 @@
 
 #include "main.h"
 #include "display_7SEG.h"
-#include "software_timer.h"
-#include "button.h"
-#include "fsm_buttons.h"
-
-
+#include "global.h"
 
 void display7SEG(int num) {
     char led7seg [10] = {0x40 , 0x79 , 0x24 , 0x30 , 0x19 , 0x92 , 0x02, 0x78 , 0x0 , 0x10 };

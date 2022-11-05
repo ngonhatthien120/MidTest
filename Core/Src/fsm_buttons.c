@@ -25,7 +25,7 @@ void fsm_simple_buttons_run (){
 		if(COUNTER > 9) COUNTER = 0;
 		isAnyButtonNPressed = 1;
 	}
-
+	//DEC
 	if (isButtonNPressed(2) == 1) {
 			//Todo
 		COUNTER--;

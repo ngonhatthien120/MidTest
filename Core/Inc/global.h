@@ -10,8 +10,8 @@
 
 #define NORMAL 0
 #define COUNDOWN 1
-extern int status;
 
+extern int status;
 extern int COUNTER;
 
 #endif /* INC_GLOBAL_H_ */
